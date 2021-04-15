@@ -1,0 +1,37 @@
+{
+  "name": "clubfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "start-dev": "webpack serve --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibnuhalimm/frontend-fundamental-01.git"
+  },
+  "author": "Ibnu Halim Mustofa <ibnuhalimm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibnuhalimm/frontend-fundamental-01/issues"
+  },
+  "homepage": "https://github.com/ibnuhalimm/frontend-fundamental-01#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.1",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
+}
