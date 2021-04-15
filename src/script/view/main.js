@@ -8,11 +8,8 @@ const main = () => {
 
     const onButtonSearchClicked = async () => {
         try {
-            const keyword = searchElement.value;
-            const response = await fetch(`https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${keyword}`);
-            const responseJson = await response.json();
-
-            renderResult(responseJson.teams);
+            const result = await DataSource.searchClub(searchElement.value);
+            renderResult(result);
 
         } catch (error) {
             fallbackResult(error);
